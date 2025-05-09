@@ -13,8 +13,6 @@ ___ push project from lab server ___
     ``` create project
 # lab server
 1. git configure
-    - git config --global user.name "nnson128"
-    - git config --global user.email "nnson128@git.nnson128.tech"
     - git clone http://git.nnson128.tech/shoeshop/shoeshop.git
     - cp -rf /projects/shoeshop/* /data/shoeshop
     - git push -f origin
