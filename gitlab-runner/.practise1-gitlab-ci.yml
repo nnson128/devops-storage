@@ -1,0 +1,12 @@
+stages:
+  - build
+  - test
+  - deploy
+build:
+  stage: build
+  script:
+    - whoami
+    - pwd
+    - ls -l
+  tags:
+    - lab-server

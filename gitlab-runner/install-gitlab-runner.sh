@@ -20,3 +20,10 @@ II. connect to gitlab server
     + concurrent = 4: Số lượng job tối đa mà gitlab-runner có thể chạy song song
 ``` nohup gitlab-runner run --working-directory /home/gitlab-runner --config /etc/gitlab-runner/config.toml --service gitlab-runner --user gitlab-runner 2 >&1 & 
 ``` ps -ef | grep gitlab-runner
+
+III. config gitlab server
+- settings -> CI/CD -> runner
+- understabd option of ci/cd on gitlab server
+- edit lab-server
+    - close "Lock to current projects"
+- save

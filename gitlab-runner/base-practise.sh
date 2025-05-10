@@ -1,26 +1,9 @@
-
-II. 
-1. config gitlab server
-- settings -> CI/CD -> runner
-- edit lab-server
-    - close "Lock to current projects"
-- save
-2. write pipeline file
+I. base practice
+1. write pipeline file
 - branch develop 
 - .gitlab-ci.yml
-stages:
-  - build
-  - test
-  - deploy
-build:
-    stage: build
-    script:
-        - whoami
-        - pwd
-        - ls -l
-    tags:
-        - lab-server
-commit: config(pipeline): add pipeline file
+- .practise1-gitlab-ci
+
 -> click ci/cd -> pipelinesq -> pending -> build
 - Reinitializing -> delete old repositories and create new repositories
 
