@@ -1,0 +1,37 @@
+stages:  
+  - build  
+  - deploy  
+  - showlog
+
+build:  
+  stage: build  
+  variables:  
+    GIT_STRATEGY: clone  
+  script:  
+    - npm run build
+  tags:  
+    - lab-server  
+  only:  
+    - tags
+
+deploy:
+  stage: deploy
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - point to nginx
+  tags:
+    - lab-server
+  only:
+    - tags
+
+showlog:  
+  stage: showlog  
+  variables:  
+    GIT_STRATEGY: none  
+  script:  
+    - sleep 20  
+    - sudo su $projectuser -c "cd $projectpath; tail -n 10000 nohup.out"  
+  tags:  
+    - lab-server  
+  only:  

@@ -1,0 +1,55 @@
+### v1
+stages: 
+    - build
+    - deploy
+    - checklog
+
+build: 
+    stage: build
+    variables:
+        GIT_STRATEGY: clone
+    script: 
+        - mvn install -DskipTests=true
+    tags:
+        - lab-server
+
+deploy: 
+    stage: deploy
+    variables:
+        GIT_STRATEGY: none
+    script: 
+        - sudo cp ./target/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar /datas/shoeshop
+        - sudo chown -R shoeshop:shoeshop /datas/shoeshop
+        - sudo su shoeshop -c "cd /datas/shoeshop/;nohup java -jar ./shoe-ShoppingCart-0.0.1-SNAPSHOT.jar 2>&1 &"
+    tags: 
+        - lab-server
+
+### v2
+### kill process is running before
+stages: 
+    - build
+    - deploy
+    - checklog
+
+build: 
+    stage: build
+    variables:
+        GIT_STRATEGY: clone
+    script: 
+        - mvn install -DskipTests=true
+    tags:
+        - lab-server
+
+deploy: 
+    stage: deploy
+    variables:
+        GIT_STRATEGY: none
+    script: 
+        - sudo cp ./target/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar /datas/shoeshop
+        - sudo chown -R shoeshop:shoeshop /datas/shoeshop
+        - sudo kill -9 $(ps -ef | grep "shoe-ShoppingCart-0.0.1-SNAPSHOT.jar" | grep -v grep | awk '{print $2}')
+        - sudo su shoeshop -c "cd /datas/shoeshop/;nohup java -jar ./shoe-ShoppingCart-0.0.1-SNAPSHOT.jar 2>&1 &"
+    tags: 
+        - lab-server
+
+### v3: .gitlab-ci.yml
