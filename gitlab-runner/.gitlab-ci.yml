@@ -15,7 +15,7 @@ build:
   variables:
     GIT_STRATEGY: clone
   script:
-    - mvn install -DskipTests=true
+    - mvn install -DskipTests=true || { echo "Build failed"; exit 1; }
   tags:
     - lab-server
   only:
@@ -26,16 +26,22 @@ deploy:
   variables:
     GIT_STRATEGY: none
   script:
-    - sudo cp ./target/$PROJECT_NAME-$PROJECT_VERSION.jar $PROJECT_PATH/
-    - sudo chown -R $PROJECT_USER:$PROJECT_USER $PROJECT_PATH
-    - sudo su $PROJECT_USER -c "
-      PID=\$(ps -ef | grep '$PROJECT_NAME-$PROJECT_VERSION.jar' | grep -v grep | awk '{print \$2}');
-      if [ -n \"\$PID\" ]; then
-      kill -9 \$PID;
-      sleep 2;
-      fi;
-      cd $PROJECT_PATH;
-      nohup java -jar $PROJECT_PATH/$PROJECT_NAME-$PROJECT_VERSION.jar > $LOG_FILE 2>&1 &
+    - |
+      if [ "$GITLAB_USER_LOGIN" != "nnson128" ]; then
+        echo "Permission denied: Only user 'nnson128' can deploy."
+        exit 1
+      fi
+      sudo cp ./target/$PROJECT_NAME-$PROJECT_VERSION.jar $PROJECT_PATH/
+      sudo chown -R $PROJECT_USER:$PROJECT_USER $PROJECT_PATH
+      sudo su $PROJECT_USER -c "
+        PID=\$(ps -ef | grep '$PROJECT_NAME-$PROJECT_VERSION.jar' | grep -v grep | awk '{print \$2}');
+        if [ -n \"\$PID\" ]; then
+          kill \$PID;
+          sleep 2;
+          [ -n \"\$(ps -p \$PID -o pid=)\" ] && kill -9 \$PID;
+        fi;
+        cd $PROJECT_PATH;
+        nohup java -jar $PROJECT_NAME-$PROJECT_VERSION.jar > $LOG_FILE 2>&1 &
       "
   tags:
     - lab-server
@@ -47,8 +53,9 @@ showlog:
   variables:
     GIT_STRATEGY: none
   script:
-    - sudo su $PROJECT_USER -c "tail -n 10000 $LOG_FILE"
+    - sudo su $PROJECT_USER -c "tail -n 100 $LOG_FILE"
   tags:
     - lab-server
   only:
     - tags
+  when: manual

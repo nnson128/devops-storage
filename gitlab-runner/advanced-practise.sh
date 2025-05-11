@@ -8,5 +8,5 @@ visudo
     - gitlab-runner ALL=(ALL) NOPASSWD: /bin/chown*
     - gitlab-runner ALL=(ALL) NOPASSWD: /bin/su shoeshop*
 
-``` ..advanced-gitlab-ci#2.sh -> commit
-``` ..advanced-gitlab-ci3.sh -> commit
+file: ```.gitlab-ci.yml
+file: ```continuous-deployment.yml
