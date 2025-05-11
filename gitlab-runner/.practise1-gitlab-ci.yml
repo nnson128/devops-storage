@@ -1,7 +1,8 @@
+### 1
 stages:
   - build
-  - test
   - deploy
+  - checklog
 build:
   stage: build
   script:
@@ -10,3 +11,67 @@ build:
     - ls -l
   tags:
     - lab-server
+
+
+### 2
+stages:
+  - build
+  - deploy
+  - checklog
+build:
+  stage: build
+  script:
+    - mvn install -DskipTests=true
+  tags:
+    - lab-server
+
+
+stages: 
+    - build
+    - deploy
+    - checklog
+
+### 3
+build: 
+    stage: build
+    variables:
+        GIT_STRATEGY: clone
+    script: 
+        - mvn install -DskipTests=true
+    tags:
+        - lab-server
+
+deploy: 
+    stage: deploy
+    variables:
+        GIT_STRATEGY: none
+    script: 
+        - java -jar ./target/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar
+    tags: 
+        - lab-server
+
+### 4
+stages: 
+    - build
+    - deploy
+    - checklog
+
+build: 
+    stage: build
+    variables:
+        GIT_STRATEGY: clone
+    script: 
+        - mvn install -DskipTests=true
+    tags:
+        - lab-server
+
+deploy: 
+    stage: deploy
+    variables:
+        GIT_STRATEGY: none
+    script: 
+        - sudo cp ./target/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar /datas/shoeshop
+        - sudo chown -R shoeshop:shoeshop /datas/shoeshop 
+        - sudo su shoeshop -c "cd /datas/shoeshop/;nohup java -jar ./shoe-ShoppingCart-0.0.1-SNAPSHOT.jar 2>&1 &"
+    tags: 
+        - lab-server
