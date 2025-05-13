@@ -1,5 +1,5 @@
 - vi /etc/hostname -> netplan apply -> reboot
-___ install jenkins.sh ___
+### ___ install jenkins.sh ___
 chmod +x install_jenkins.sh
 
 #!/bin/bash
