@@ -1,3 +1,6 @@
+# ci: build
+# cd: deploy
+# non ci/cd: showlog
 variables:
   PROJECT_NAME: shoe-ShoppingCart
   PROJECT_VERSION: 0.0.1-SNAPSHOT
