@@ -1,8 +1,7 @@
 note: lab server - jenkins server
     - java version = java version 
 ____ Triển khai ci/cd trên deploying server với jenkins server ____ 
-###### b1: 
-1. create connection: jenkins agent (node) - deploying server (lab server)
+###### b1: create connection: jenkins agent (node) - deploying server (lab server)
 # lab server
     - mkdir /var/lib/jenkins
     - adduser jenkins
@@ -15,9 +14,9 @@ access http://jenkins.nnson128.tech
     - visit node: 
     - cd && su jenkins /var/lib/jenkins (lab server)
     - run command: bỏ tùy chọn websocket
+        + Vậy user được node xác định ở đây là user chạy lệnh java -jar agent.jar đúng ko
     - reload http://jenkins.nnson128.tech => connected
-###### b2: 
-2. kết nối jenkins server đến gitlab
+###### b2: kết nối jenkins server đến gitlab
     - Dashboard -> new item > new folder -> Action_in_lab -> save
     - manage jenkins > system > kéo xuống: Gitlab
         + connection name: gitlab server
