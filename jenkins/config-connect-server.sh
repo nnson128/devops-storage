@@ -73,6 +73,9 @@ repo: settings > webhooks
 5. add Jenkinsfile
 jenkinsfile syntax
 
+edit Jenkinsfile:
+    commit -> build and deploy
+build and run with pipeline - jenkins server
 
 http://nnson128:115479389b6e8c4178889d6d9b31bd7742@jenkins.nnson128.tech/project/Action_in_lab/shoeshop
 http://nnson128:11d5cbb53014dcab6b9286b3bc95a91d39@jenkins.nnson128.tech/project/Action_in_lab/shoeshop

@@ -1,0 +1,26 @@
+services:
+  db1:
+    image: mariadb:10.6
+    volumes:
+      - ./data/mariadb-1:/var/lib/mysql
+      # clear volume: rm -rf ./data/mariadb-1
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - 3307:3306
+    container_name: mariadb-1
+    restart: always
+  app-backend:
+    image: mariadb:10.6
+    volumes:
+      - ./data/mariadb-1:/var/lib/mysql
+      # clear volume: rm -rf ./data/mariadb-1
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - 3307:3306
+    container_name: mariadb-1
+    restart: always
+  # docker inspect container-name
+  # các server thông với nhau hay không phụ thuộc vào ip gateway giống nhau hay ko
+  
