@@ -6,3 +6,6 @@ docker container prune -f
 docker network prune -f
 docker volume prune -f
 docker builder prune -af
+
+
+cronjob: what / why
