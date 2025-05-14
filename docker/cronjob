@@ -1,10 +1,6 @@
 Run cronjob: xoá định kì image , volume, container 
-__ combo dọn dẹp __
 
-docker system prune -af         # images, container, netword, build cache
 docker system prune -af --volumes
-
-docker image prune -af
 
 docker container prune -f
 docker network prune -f
