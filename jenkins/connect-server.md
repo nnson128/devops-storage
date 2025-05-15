@@ -17,9 +17,8 @@ deploying server
 new node 
     Remote root directory: none. 
         Chỉ cần chỉ định workdir bước chạy java -jar là được
-visit node: 
 cd && su jenkins /var/lib/jenkins
-run command: <ignore websocket>
+run command: <ignore websocket> + workdir /var/lib/jenkinss
     - user được node xác định là user run command java -jar
 connected
 ```
