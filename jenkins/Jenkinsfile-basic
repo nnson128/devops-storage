@@ -6,9 +6,9 @@ pipeline {
         stage('in4') {
             steps {
                 sh(script: """
-                    whoami, 
+                    whoami 
                     pwd
-                    
+                    ls -la
                 """, label: 'build with maven')
             }
         }
