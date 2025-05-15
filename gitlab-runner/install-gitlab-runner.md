@@ -23,8 +23,9 @@ nohup gitlab-runner run --working-directory /home/gitlab-runner --config /etc/gi
 ps -ef | grep gitlab-runner
 ``` 
 
-3. config on gitlab server: click code gitlab runner when success
+3. config gitlab runner on gitlab server: cấu hình con runner chạy khi nào
 ``` 
+- 
 - settings -> CI/CD -> runner
 - understabd option of ci/cd on gitlab server
 - edit lab-server
