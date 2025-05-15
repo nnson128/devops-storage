@@ -56,7 +56,7 @@ b3: create pipeline
             - branch specifier: */main
 success
 ```
-b4: config webhook
+4. config webhook
 ```
 4. webhook (gitlab server)
 repo: settings > webhooks
