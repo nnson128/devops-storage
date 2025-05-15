@@ -37,7 +37,7 @@ connected
         - ID = desc: jenkins-gitlab-user
 success
 ```
-b3: create pipeline
+3. create pipeline
 ```
 3. dashboard > Action_in_lab > shoeshop (type = pipeline)
     + discard old builds: 
