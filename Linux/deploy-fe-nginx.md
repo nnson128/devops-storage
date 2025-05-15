@@ -17,3 +17,7 @@ server {
 }
 usermod -aG note-fe www-data
 <!-- add user www-data to group note-fe -->
+
+
+
+<pre> ```bash install tool build + run ``` ```bash install tool build + run ``` ```bash install tool build + run ``` </pre>
