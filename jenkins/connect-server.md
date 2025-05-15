@@ -4,7 +4,7 @@ jenkins server
     bản chất jenkins là ra lệnh cho các deploying server triển khai các dự án 
 ```
 
-##### 1. connect jenkins server - deploying server: setup jenkins agent: node
+1. connect jenkins server - deploying server: setup jenkins agent: node
 ```
 Phương pháp: 
     + ssh
