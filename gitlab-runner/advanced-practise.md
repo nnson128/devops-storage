@@ -12,5 +12,5 @@ visudo
 ``` 
 ``` 
 .gitlab-ci.yml
-continuous-deployment.yml
+cd.yml
 ``` 
