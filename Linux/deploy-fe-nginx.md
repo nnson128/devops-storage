@@ -1,12 +1,11 @@
 Linux: 
 1. config
 ```
-docker compose up -d
-```
-
 install tool build + run
 - chown -R note-fe. 
 - chmod -R 750 /projects/note-fe
+```
+
 2. build project
 - sử dụng user prj để triển khai 
 - build project
