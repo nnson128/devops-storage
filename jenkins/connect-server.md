@@ -17,8 +17,6 @@ deploying server
 new node 
     Remote root directory: none. 
         Chỉ cần chỉ định workdir bước chạy java -jar là được
-    security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
-        <!-- TCP port: port trên jenkins mở cho tất cả jenkins agent của deploying server -->
 visit node: 
 cd && su jenkins /var/lib/jenkins
 run command: <ignore websocket>
