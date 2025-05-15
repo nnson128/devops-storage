@@ -2,7 +2,7 @@
 bản chất jenkins là ra lệnh cho các deploying server triển khai các dự án 
 ```
 
-1. connect jenkins server - deploying server
+###### 1. connect jenkins server - deploying server
 ```
 require: 
     java version = java version 
