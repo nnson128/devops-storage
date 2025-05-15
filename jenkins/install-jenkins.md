@@ -1,7 +1,8 @@
 1. config netplan and hostname
 ```
-- vi /etc/hostname -> netplan apply -> reboot
+vi /etc/hostname -> netplan apply -> reboot
 chmod +x install_jenkins.sh
+systemctl status jenkins
 ```
 2. instal jenkins
 ```
@@ -49,6 +50,7 @@ server {
 ```
 4. connect to gitlab
 ```
+add host
 install plugin: gitlab, blue ocean
 
 ```
