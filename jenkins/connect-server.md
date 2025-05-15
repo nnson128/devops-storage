@@ -77,9 +77,6 @@ success
 ```
 5. viết Jenkinsfile
 ```
-5. add Jenkinsfile
-jenkinsfile syntax
-
 edit Jenkinsfile:
     commit -> build and deploy
 build and run with pipeline - jenkins server
