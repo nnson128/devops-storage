@@ -1,3 +1,5 @@
+```
+
 ##### Dockerfile #####
 FROM maven:3.8.3-openjdk-17 AS build
 WORKDIR /app
@@ -19,3 +21,5 @@ EXPOSE 8080
 
 ENV JAVA_OPTIONS="-Xmx2048m -Xms256m"
 ENTRYPOINT ["java", "-jar", "/run/shoe-ShoppingCart-0.0.1-SNAPSHOT.jar"]
+
+```
