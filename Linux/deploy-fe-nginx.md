@@ -22,6 +22,9 @@ server {
     index index.html;
     try_files $uri $uri/ /index.html;
 }
+```
+
+```
 usermod -aG note-fe www-data
 ```
 
