@@ -47,3 +47,12 @@ server {
   }
 }
 ```
+4. connect to gitlab
+```
+install plugin: gitlab, blue ocean
+
+```
+```
+
+```
+
