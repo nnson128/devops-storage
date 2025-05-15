@@ -22,24 +22,23 @@ run command: <ignore websocket> + workdir /var/lib/jenkinss
     - user được node xác định là user run command java -jar
 connected
 ```
+2: kết nối jenkins server đến gitlab
 
 ```
-
-2: kết nối jenkins server đến gitlab
-    - manage jenkins > system > kéo xuống: Gitlab
-        + connection name: gitlab server
-        + credentials: add new credentials
-            - Domain: Global credentials
-            - token: ___ GET TOKEN ___
-                # gitlab server
-                + new user admin: jenkins
-                + profile -> access token
-                    - token name: token for jenkins server connection 
-                    - scopes: api
-                    - create personal access token
-                    - copy token
-            - ID: jenkins-gitlab-user
-    success
+- manage jenkins > system > kéo xuống: Gitlab
+    + connection name: gitlab server
+    + credentials: add new credentials
+        - Domain: Global credentials
+        - token: ___ GET TOKEN ___
+            # gitlab server
+            + new user admin: jenkins
+            + profile -> access token
+                - token name: token for jenkins server connection 
+                - scopes: api
+                - create personal access token
+                - copy token
+        - ID: jenkins-gitlab-user
+success
 ```
 ```
 
