@@ -29,14 +29,14 @@ connected
     + connection name: gitlab server
     + credentials: add new credentials
         - Domain: Global credentials
-        - token: ___ GET TOKEN ___
-            # gitlab server
-            + new user admin: jenkins
-            + profile -> access token
-                - token name: token for jenkins server connection 
-                - scopes: api
-                - create personal access token
-                - copy token
+        - token: 
+            gitlab server
+            new user admin: jenkins
+            profile -> access token
+                token name: token for jenkins server connection 
+                scopes: api
+                create personal access token
+                copy token
         - ID: jenkins-gitlab-user
 success
 ```
