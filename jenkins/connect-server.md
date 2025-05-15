@@ -19,7 +19,7 @@ new node
     security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
         <!-- TCP port: port trên jenkins mở cho tất cả jenkins agent của deploying server -->
 visit node: 
-cd && su jenkins /var/lib/jenkins (lab server)
+cd && su jenkins /var/lib/jenkins
 run command: <ignore websocket>
     - user được node xác định là user run command java -jar
 success
