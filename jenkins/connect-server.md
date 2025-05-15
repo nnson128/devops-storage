@@ -54,9 +54,9 @@ b3: create pipeline
                 - id: jenkins-gitlab-user-account
                 - description: jenkins gitlab user account
             - branch specifier: */main
-            - save
+success
 ```
-###### b4: config webhook
+b4: config webhook
 ```
 4. webhook (gitlab server)
 repo: settings > webhooks
@@ -71,9 +71,9 @@ repo: settings > webhooks
     - push events
     - tab push event 
     - merge request events
+
     - bỏ chọn enable ssl verification
-    - add webhook
-    - test -> push event 
+success
 
 b5: new file Jenkinsfile on branch develop
 5. add Jenkinsfile
@@ -100,4 +100,6 @@ Cấu hình khi tạo pipeline:
         - build when a change is pushed to GitLab
             + push events: chạy khi có push lên branch
             + accept merge request: chạy khi có accept merge request lên branch
+config webhook trên dự án gitlab:  
+    "thông báo" cho Jenkins rằng có sự kiện xảy ra (push, merge, tag, v.v.).
 ```
