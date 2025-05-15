@@ -39,15 +39,15 @@ success
 ```
 b3: create pipeline
 ```
-3. create pipeline: > Action_in_lab > shoeshop (type = pipeline)
+3. dashboard > Action_in_lab > shoeshop (type = pipeline)
     + discard old builds: 
         - max # of builds to keep: 10
     + gitlab connection: 
         - gitlab server
     + triggers: 
         - build when a change is pushed to GitLab
-            + push events: 
-            + accept merge request 
+            + push events: chạy khi có push lên branch
+            + accept merge request: chạy khi có accept merge request lên branch
     + Pipeline
         + pipeline script from SCM
             - SCM: git
@@ -90,4 +90,13 @@ http://nnson128:11286cc75c0b5784a90c6f9ec78e5e7db0@jenkins.nnson128.tech/project
 2. create workspace
 ```
 Dashboard > new item > folder: Action_in_lab 
+```
+
+6. Khi nào pipeline chạy ??
+```
+Cấu hình khi tạo pipeline: 
+    + triggers: 
+        - build when a change is pushed to GitLab
+            + push events: chạy khi có push lên branch
+            + accept merge request: chạy khi có accept merge request lên branch
 ```
