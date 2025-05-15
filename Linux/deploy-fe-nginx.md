@@ -14,6 +14,9 @@ Linux:
 3. run project <đảm bảo có mục build >
 ```
 vi /etc/nginx/conf.d/note-fe.conf
+```
+
+```
 server {
     listen 80;
     root /projects/note-fe/dist/;
