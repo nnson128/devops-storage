@@ -13,7 +13,7 @@ II. connect to gitlab server
 ```
 - lab server:
 ``` 
-    gitlab-runner register
+gitlab-runner register
     + cop url && token
     + desc: lab server
     + tag: lab server
