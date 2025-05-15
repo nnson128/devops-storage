@@ -14,19 +14,18 @@ require:
 deploying server
     mkdir /var/lib/jenkins
     adduser jenkins
-b1: setup jenkins agent on deploying server
 new node 
     Remote root directory: /var/lib/jenkins
     security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
         <!-- TCP port: port trên jenkins mở cho tất cả jenkins agent của deploying server -->
-- visit node: 
-- cd && su jenkins /var/lib/jenkins (lab server)
-- run command: bỏ tùy chọn websocket
-    + Vậy user được node xác định ở đây là user chạy lệnh java -jar agent.jar đúng ko
-- reload http://jenkins.nnson128.tech => connected
+visit node: 
+cd && su jenkins /var/lib/jenkins (lab server)
+run command: <ignore websocket>
+    - user được node xác định là user run command java -jar
+success
 ```
 
-##### b2: kết nối jenkins server đến gitlab
+##### 2: kết nối jenkins server đến gitlab
     - Dashboard -> new item > new folder -> Action_in_lab -> save
     - manage jenkins > system > kéo xuống: Gitlab
         + connection name: gitlab server
