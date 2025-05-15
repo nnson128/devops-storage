@@ -1,7 +1,9 @@
+```
 - vi /etc/hostname -> netplan apply -> reboot
 ### ___ install jenkins.sh ___
 chmod +x install_jenkins.sh
-
+```
+```
 #!/bin/bash
 [ "$EUID" -ne 0 ] && exit 1
 sed -i '/cdrom/d' /etc/apt/sources.list
@@ -24,7 +26,7 @@ systemctl daemon-reload
 systemctl start jenkins
 systemctl enable jenkins
 ufw allow 8080
-
+```
 ___ install nginx và cho jenkins chạy trên cổng 80 ___
 
 vi /etc/nginx/conf.d/jenkins.nnson128.tech.conf

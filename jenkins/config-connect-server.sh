@@ -1,11 +1,14 @@
+```
 note: lab server - jenkins server
     - java version = java version 
 ____ Triển khai ci/cd trên deploying server với jenkins server ____ 
+```
 ###### b1: create connection: jenkins agent (node) - deploying server (lab server)
 # lab server
     - mkdir /var/lib/jenkins
     - adduser jenkins
 # jenkins server
+
 access http://jenkins.nnson128.tech
     - new node 
         + Remote root directory: /var/lib/jenkins(on lab server)
