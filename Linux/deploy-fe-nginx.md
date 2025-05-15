@@ -1,6 +1,7 @@
 Linux: 
 1. config
-```install tool build + run```
+```bash
+install tool build + run
 - chown -R note-fe. 
 - chmod -R 750 /projects/note-fe
 2. build project
