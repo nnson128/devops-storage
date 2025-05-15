@@ -1,10 +1,10 @@
-```bash install tool build + run ``` 
-```bash install tool build + run ``` 
-```bash install tool build + run ``` 
-
 Linux: 
 1. config
-```bash
+```
+cd <project folder>
+docker compose up -d
+```
+
 install tool build + run
 - chown -R note-fe. 
 - chmod -R 750 /projects/note-fe
