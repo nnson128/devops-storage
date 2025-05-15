@@ -23,9 +23,11 @@ nohup gitlab-runner run --working-directory /home/gitlab-runner --config /etc/gi
 ps -ef | grep gitlab-runner
 ``` 
 
-III. config gitlab server
+3. config gitlab server
+``` 
 - settings -> CI/CD -> runner
 - understabd option of ci/cd on gitlab server
 - edit lab-server
     - close "Lock to current projects"
 - save
+``` 
