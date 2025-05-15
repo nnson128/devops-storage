@@ -1,9 +1,12 @@
-### git work flow ###
+1. git work flow 
+```
 1. create branches
     - develop
     - feature/frontend/login
     - feature/backend/login
     - staging
+```
+```
 2. protected branches
     - default branch -> develop
 
@@ -13,6 +16,8 @@
     - staging: maintainer - maintainer
     - push commit to main 
         + cannot push commit to main
+```
+```
 
 3. create user dev1
     - git commit
@@ -26,3 +31,4 @@
         + Repo -> tags 
             + name: dev_0.0.1
             + ``` create tag
+```
