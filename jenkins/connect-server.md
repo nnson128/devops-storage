@@ -77,9 +77,7 @@ success
 ```
 5. viết Jenkinsfile
 ```
-edit Jenkinsfile:
-    commit -> build and deploy
-build and run with pipeline - jenkins server
+branch dev - main
 ```
 
 
