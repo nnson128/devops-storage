@@ -22,9 +22,14 @@ run command: <ignore websocket> + workdir /var/lib/jenkinss
     - user được node xác định là user run command java -jar
 connected
 ```
+2. create workspace
 ```
+
+    - Dashboard > new item > folder: Action_in_lab 
+```
+```
+
 2: kết nối jenkins server đến gitlab
-    - Dashboard -> new item > new folder -> Action_in_lab -> save
     - manage jenkins > system > kéo xuống: Gitlab
         + connection name: gitlab server
         + URL: https://gitlab.nnson128.tech
