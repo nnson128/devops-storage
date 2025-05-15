@@ -82,7 +82,6 @@ edit Jenkinsfile:
 build and run with pipeline - jenkins server
 ```
 
-```
 
 6. Khi nào pipeline chạy ??
 ```
