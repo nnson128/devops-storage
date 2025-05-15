@@ -42,10 +42,10 @@ Dashboard > new item > folder: Action_in_lab
                     - create personal access token
                     - copy token
             - ID: jenkins-gitlab-user
-            - save
+    success
 ```
 
-###### b3: create pipeline
+b3: create pipeline
 3. create pipeline: > Action_in_lab > shoeshop (type = pipeline)
     + discard old builds: 
         - max # of builds to keep: 10
@@ -62,7 +62,10 @@ Dashboard > new item > folder: Action_in_lab
                 - description: jenkins gitlab user account
             - branch specifier: */main
             - save
+```
+
 ###### b4: config webhook
+
 4. webhook (gitlab server)
 repo: settings > webhooks
     - admin > settings > network > outbound requests
