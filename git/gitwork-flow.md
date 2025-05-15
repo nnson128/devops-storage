@@ -9,7 +9,6 @@
 ```
 2. protected branches
     - default branch -> develop
-
     - main: maintainer - no one
     - develop: maintainer - maintainer
         + devops: commit config(database): modify connection
@@ -26,9 +25,4 @@
     - reviewer: leader
     - close "Delete source branch when merge request is accepted"
     ``` create merge request
-4. create tags: Đánh dấu phiên bản triển khai dự án
-    - develop branch: 
-        + Repo -> tags 
-            + name: dev_0.0.1
-            + ``` create tag
 ```
