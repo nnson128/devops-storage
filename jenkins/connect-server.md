@@ -74,10 +74,13 @@ repo: settings > webhooks
 
     - bỏ chọn enable ssl verification
 success
+```
+```
 
 b5: new file Jenkinsfile on branch develop
 5. add Jenkinsfile
 jenkinsfile syntax
+```
 
 edit Jenkinsfile:
     commit -> build and deploy
