@@ -1,8 +1,10 @@
+1. config netplan and hostname
 ```
 - vi /etc/hostname -> netplan apply -> reboot
 ### ___ install jenkins.sh ___
 chmod +x install_jenkins.sh
 ```
+2. install jenkins
 ```
 #!/bin/bash
 [ "$EUID" -ne 0 ] && exit 1
