@@ -44,6 +44,7 @@ Dashboard > new item > folder: Action_in_lab
             - ID: jenkins-gitlab-user
     success
 ```
+```
 
 b3: create pipeline
 3. create pipeline: > Action_in_lab > shoeshop (type = pipeline)
@@ -62,6 +63,7 @@ b3: create pipeline
                 - description: jenkins gitlab user account
             - branch specifier: */main
             - save
+```
 ```
 
 ###### b4: config webhook
