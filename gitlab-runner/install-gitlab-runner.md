@@ -7,9 +7,11 @@ gitlab-runner -version
 user vi /etc/passwd
 ```
 II. connect to gitlab server
+```
 - access git.nnson128.tech
 - settings -> CI/CD -> runner
-# lab server:
+```
+- lab server:
 ``` gitlab-runner register
     + cop url && token
     + desc: lab server
