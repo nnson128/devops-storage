@@ -1,7 +1,6 @@
 Linux: 
 1. config
 ```
-cd <project folder>
 docker compose up -d
 ```
 
