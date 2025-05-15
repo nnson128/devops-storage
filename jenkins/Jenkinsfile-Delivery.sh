@@ -39,6 +39,7 @@ pipeline {
                             echo 'Do not confirm the deployment!'
                         }
                     } catch (Exception err) {
+                        
                     }
                 }
             }
