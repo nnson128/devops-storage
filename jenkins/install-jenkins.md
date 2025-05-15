@@ -1,10 +1,9 @@
 1. config netplan and hostname
 ```
 - vi /etc/hostname -> netplan apply -> reboot
-### ___ install jenkins.sh ___
 chmod +x install_jenkins.sh
 ```
-2. install jenkins
+2. instal jenkins
 ```
 #!/bin/bash
 [ "$EUID" -ne 0 ] && exit 1
@@ -29,8 +28,8 @@ systemctl start jenkins
 systemctl enable jenkins
 ufw allow 8080
 ```
-___ install nginx và cho jenkins chạy trên cổng 80 ___
-
+3. jenkins at port 80
+```
 vi /etc/nginx/conf.d/jenkins.nnson128.tech.conf
 server {
   listen 80;
@@ -47,3 +46,4 @@ server {
     proxy_set_header X-Forwarded-Proto $scheme;
   }
 }
+```
