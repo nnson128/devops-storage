@@ -6,9 +6,10 @@ bản chất jenkins là ra lệnh cho các deploying server triển khai các d
 ```
 require: 
     java version = java version 
-lab server
+deploying server
     mkdir /var/lib/jenkins
     adduser jenkins
+```
 ```
 
 # jenkins server
@@ -22,6 +23,8 @@ access http://jenkins.nnson128.tech
     - run command: bỏ tùy chọn websocket
         + Vậy user được node xác định ở đây là user chạy lệnh java -jar agent.jar đúng ko
     - reload http://jenkins.nnson128.tech => connected
+```
+
 ###### b2: kết nối jenkins server đến gitlab
     - Dashboard -> new item > new folder -> Action_in_lab -> save
     - manage jenkins > system > kéo xuống: Gitlab
