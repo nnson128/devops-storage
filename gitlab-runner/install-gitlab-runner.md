@@ -1,4 +1,4 @@
-1. install gitlab-runner
+1. install gitlab-runner: robot
 ```
 apt-get update
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | bash
@@ -6,7 +6,7 @@ apt-get install gitlab-runner
 gitlab-runner -version
 user vi /etc/passwd
 ```
-II. connect to gitlab server
+2. connect to gitlab server
 ```
 - access git.nnson128.tech
 - settings -> CI/CD -> runner
