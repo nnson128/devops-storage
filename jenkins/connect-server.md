@@ -4,7 +4,7 @@ jenkins server
     bản chất jenkins là ra lệnh cho các deploying server triển khai các dự án 
 ```
 
-##### 1. connect jenkins server - deploying server
+##### 1. connect jenkins server - deploying server: setup jenkins agent: node
 ```
 Phương pháp: 
     + ssh
@@ -14,24 +14,16 @@ require:
 deploying server
     mkdir /var/lib/jenkins
     adduser jenkins
-```
-```
 b1: setup jenkins agent on deploying server
-    adduser jenkins
-    mkdir /
-
-# jenkins server
-access http://jenkins.nnson128.tech
-    - new node 
-        Remote root directory: /var/lib/jenkins(on lab server)
-        security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
-            <!-- TCP port: port trên jenkins mở cho tất cả jenkins agent của deploying server -->
-        save
-    - visit node: 
-    - cd && su jenkins /var/lib/jenkins (lab server)
-    - run command: bỏ tùy chọn websocket
-        + Vậy user được node xác định ở đây là user chạy lệnh java -jar agent.jar đúng ko
-    - reload http://jenkins.nnson128.tech => connected
+new node 
+    Remote root directory: /var/lib/jenkins
+    security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
+        <!-- TCP port: port trên jenkins mở cho tất cả jenkins agent của deploying server -->
+- visit node: 
+- cd && su jenkins /var/lib/jenkins (lab server)
+- run command: bỏ tùy chọn websocket
+    + Vậy user được node xác định ở đây là user chạy lệnh java -jar agent.jar đúng ko
+- reload http://jenkins.nnson128.tech => connected
 ```
 
 ##### b2: kết nối jenkins server đến gitlab
