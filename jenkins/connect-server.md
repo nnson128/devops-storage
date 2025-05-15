@@ -91,3 +91,10 @@ Cấu hình khi tạo pipeline:
 config webhook trên dự án gitlab:  
     "thông báo" cho Jenkins rằng có sự kiện xảy ra (push, merge, tag, v.v.).
 ```
+
+6. practise
+```
+./Jenkinsfile-basic
+./Jenkinsfile
+./Jenkinsfile-Delivery
+```

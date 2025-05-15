@@ -1,0 +1,16 @@
+pipeline {
+    agent {
+        label 'lab-server'
+    }
+    stages {
+        stage('in4') {
+            steps {
+                sh(script: """
+                    whoami, 
+                    pwd
+                    
+                """, label: 'build with maven')
+            }
+        }
+    }
+}
