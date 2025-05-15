@@ -1,4 +1,6 @@
-<pre> ```bash install tool build + run ``` ```bash install tool build + run ``` ```bash install tool build + run ``` </pre>
+```bash install tool build + run ``` 
+```bash install tool build + run ``` 
+```bash install tool build + run ``` 
 
 Linux: 
 1. config
