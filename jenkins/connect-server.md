@@ -15,14 +15,15 @@ deploying server
     mkdir /var/lib/jenkins
     adduser jenkins
 new node 
-    Remote root directory: /var/lib/jenkins
+    Remote root directory: none. 
+        Chỉ cần chỉ định workdir bước chạy java -jar là được
     security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
         <!-- TCP port: port trên jenkins mở cho tất cả jenkins agent của deploying server -->
 visit node: 
 cd && su jenkins /var/lib/jenkins
 run command: <ignore websocket>
     - user được node xác định là user run command java -jar
-success
+connected
 ```
 
 2: kết nối jenkins server đến gitlab
