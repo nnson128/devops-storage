@@ -24,18 +24,15 @@ connected
 ```
 2. create workspace
 ```
-
-    - Dashboard > new item > folder: Action_in_lab 
+Dashboard > new item > folder: Action_in_lab 
 ```
 ```
 
 2: kết nối jenkins server đến gitlab
     - manage jenkins > system > kéo xuống: Gitlab
         + connection name: gitlab server
-        + URL: https://gitlab.nnson128.tech
         + credentials: add new credentials
             - Domain: Global credentials
-            - kind: gitlab API token
             - token: ___ GET TOKEN ___
                 # gitlab server
                 + new user admin: jenkins
