@@ -27,17 +27,14 @@ connected
 ```
 - manage jenkins > system > kéo xuống: Gitlab
     + connection name: gitlab server
-    + credentials: add new credentials
-        - Domain: Global credentials
+    + credentials: 
         - token: 
-            gitlab server
-            new user admin: jenkins
+            gitlab server(user jenkins role admin)
             profile -> access token
                 token name: token for jenkins server connection 
                 scopes: api
                 create personal access token
-                copy token
-        - ID: jenkins-gitlab-user
+        - ID = desc: jenkins-gitlab-user
 success
 ```
 ```
