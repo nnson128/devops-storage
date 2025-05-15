@@ -2,9 +2,7 @@
 bản chất jenkins là ra lệnh cho các deploying server triển khai các dự án 
 ```
 
-###### 1. connect jenkins server - deploying server
 ##### 1. connect jenkins server - deploying server
-#### 1. connect jenkins server - deploying server
 ```
 require: 
     java version = java version 
@@ -27,7 +25,7 @@ access http://jenkins.nnson128.tech
     - reload http://jenkins.nnson128.tech => connected
 ```
 
-###### b2: kết nối jenkins server đến gitlab
+##### b2: kết nối jenkins server đến gitlab
     - Dashboard -> new item > new folder -> Action_in_lab -> save
     - manage jenkins > system > kéo xuống: Gitlab
         + connection name: gitlab server
