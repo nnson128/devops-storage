@@ -91,6 +91,7 @@ http://nnson128:11286cc75c0b5784a90c6f9ec78e5e7db0@jenkins.nnson128.tech/project
 ```
 Dashboard > new item > folder: Action_in_lab 
 ```
+```
 
 6. Khi nào pipeline chạy ??
 ```
