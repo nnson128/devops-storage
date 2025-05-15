@@ -56,10 +56,8 @@ b3: create pipeline
             - branch specifier: */main
             - save
 ```
-```
-
 ###### b4: config webhook
-
+```
 4. webhook (gitlab server)
 repo: settings > webhooks
     - admin > settings > network > outbound requests
@@ -77,7 +75,7 @@ repo: settings > webhooks
     - add webhook
     - test -> push event 
 
-###### b5: new file Jenkinsfile on branch develop
+b5: new file Jenkinsfile on branch develop
 5. add Jenkinsfile
 jenkinsfile syntax
 
