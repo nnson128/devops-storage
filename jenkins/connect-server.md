@@ -25,7 +25,7 @@ run command: <ignore websocket>
 success
 ```
 
-##### 2: kết nối jenkins server đến gitlab
+2: kết nối jenkins server đến gitlab
     - Dashboard -> new item > new folder -> Action_in_lab -> save
     - manage jenkins > system > kéo xuống: Gitlab
         + connection name: gitlab server
