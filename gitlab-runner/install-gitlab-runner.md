@@ -31,4 +31,5 @@ ps -ef | grep gitlab-runner
 - edit lab-server
     - close "Lock to current projects"
 - save
+- Việc tự động chạy pipeline hay ko sẽ tùy thuộc hoàn toàn vào file .gitlab-ci.yml
 ``` 
