@@ -1,9 +1,14 @@
 ```
-bản chất jenkins là ra lệnh cho các deploying server triển khai các dự án 
+jenkins server
+    nơi chạy các pipeline
+    bản chất jenkins là ra lệnh cho các deploying server triển khai các dự án 
 ```
 
 ##### 1. connect jenkins server - deploying server
 ```
+Phương pháp: 
+    + ssh
+    + jenkins agent
 require: 
     java version = java version 
 deploying server
@@ -11,12 +16,16 @@ deploying server
     adduser jenkins
 ```
 ```
+b1: setup jenkins agent on deploying server
+    adduser jenkins
+    mkdir /
 
 # jenkins server
 access http://jenkins.nnson128.tech
     - new node 
-        + Remote root directory: /var/lib/jenkins(on lab server)
-        + security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
+        Remote root directory: /var/lib/jenkins(on lab server)
+        security(manage jenkins) -> TCP port: 8999 -> save -> netstat -plunt
+            <!-- TCP port: port trên jenkins mở cho tất cả jenkins agent của deploying server -->
         save
     - visit node: 
     - cd && su jenkins /var/lib/jenkins (lab server)
