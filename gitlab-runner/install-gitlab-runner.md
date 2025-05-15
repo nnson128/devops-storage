@@ -23,7 +23,7 @@ nohup gitlab-runner run --working-directory /home/gitlab-runner --config /etc/gi
 ps -ef | grep gitlab-runner
 ``` 
 
-3. config gitlab server
+3. config on gitlab server: click code gitlab runner when success
 ``` 
 - settings -> CI/CD -> runner
 - understabd option of ci/cd on gitlab server
