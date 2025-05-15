@@ -13,10 +13,11 @@ cat /etc/gitlab/initial_root_password | 88888888
 
 # macos server
 macos: 
-vi /etc/hosts | 192.168.227.100 git.nnson128.tech
-
+vi /etc/hosts 
+    192.168.227.100 git.nnson128.tech
 # lab server
-vi /etc/hosts | 192.168.227.100 git.nnson128.tech
+vi /etc/hosts 
+    192.168.227.100 git.nnson128.tech
 ```
 
 ```
