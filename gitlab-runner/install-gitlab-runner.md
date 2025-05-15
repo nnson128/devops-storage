@@ -17,8 +17,6 @@ gitlab-runner register
     + cop url && token
     + desc = tag: lab server
     + executor: shell, docker, kubernetes - just use shell
-``` 
-``` 
 vi /etc/gitlab-runner/config.toml
     + concurrent = 4: Số lượng job tối đa mà gitlab-runner có thể chạy song song
 ``` 
