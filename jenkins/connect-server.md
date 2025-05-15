@@ -22,7 +22,7 @@ run command: <ignore websocket> + workdir /var/lib/jenkinss
     - user được node xác định là user run command java -jar
 connected
 ```
-2: kết nối jenkins server đến gitlab
+2. kết nối jenkins server đến gitlab
 
 ```
 - manage jenkins > system > kéo xuống: Gitlab
@@ -37,9 +37,8 @@ connected
         - ID = desc: jenkins-gitlab-user
 success
 ```
-```
-
 b3: create pipeline
+```
 3. create pipeline: > Action_in_lab > shoeshop (type = pipeline)
     + discard old builds: 
         - max # of builds to keep: 10
