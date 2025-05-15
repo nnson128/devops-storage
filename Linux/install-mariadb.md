@@ -19,3 +19,7 @@ mysql -h 192.168.227.110 -P 3306 -u user -p
 use database;
 source /path.sql; 
 ```
+4. Run
+```
+nohup java -jar ./target/base-001-snapshot.jar 2>&1 &
+```
