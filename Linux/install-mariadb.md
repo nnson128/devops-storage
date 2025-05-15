@@ -1,8 +1,5 @@
 ___install and config___
 1.
-# - install mariadb server
-# - change bind address
-# create user password database 
 ```
 - mysql -u root -p
 ```
