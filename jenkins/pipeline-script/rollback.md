@@ -14,19 +14,21 @@ xác đinh được version trước đó
 pipeline configure:
     add param (active choice reactive params)
     name: rollback_version
+    Referenced parameters: server, action
+    approve script 
 ```
 2. groovy script
 ```
 import jenkins.model.*
 import hudson.FilePath
 backupPath = "/datas/shoeshop/backups/"
-def server = Jenkins.getInstance().getNode(server)
-def remoteDir = new FilePath(server.getChannel(), "${backupPath}")
+def node = Jenkins.getInstance().getNode(server)
+def remoteDir = new FilePath(node.getChannel(), "${backupPath}")
 
 def files = remoteDir.list()
 def nameFile = files.collect {it.name}
 
-if(params.action == "rollback"){
+if(action == "rollback"){
     return nameFile
 }
 

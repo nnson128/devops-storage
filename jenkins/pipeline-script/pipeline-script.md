@@ -1,4 +1,3 @@
-```
 
 appUser = "shoeshop"
 appName = "shoe-ShoppingCart"
@@ -84,4 +83,3 @@ node(params.server){
         startProcess()
     }
 }
-```
