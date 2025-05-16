@@ -1,3 +1,4 @@
+```
 DOCKERHUB_USER = 'vinh412'
 DOCKERHUB_CREDENTIALS_ID = 'vinh412-docker-hub'
 GITHUB_URL = "https://github.com/vinh412/chat-apps.git"
@@ -37,3 +38,4 @@ node {
         }
     }
 }
+```

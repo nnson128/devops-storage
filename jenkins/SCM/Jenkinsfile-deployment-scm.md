@@ -1,3 +1,5 @@
+```
+
 // SCM: Source code management
 pipeline {
     agent {
@@ -32,3 +34,5 @@ pipeline {
         }
     }
 }
+
+```

@@ -1,3 +1,5 @@
+```
+
 pipeline {
     agent {
         label 'lab-server'
@@ -46,3 +48,5 @@ pipeline {
         }
     }
 }
+
+```
