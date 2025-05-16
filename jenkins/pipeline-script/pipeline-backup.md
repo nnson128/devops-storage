@@ -1,11 +1,11 @@
-```
-
 appUser = "shoeshop"
 appName = "shoe-ShoppingCart"
 appVersion = "0.0.1-SNAPSHOT"
 appType = "jar"
 processName = "${appName}-${appVersion}.${appType}"
-folderDeploy = "/datas/${appUser}"
+folderDeploy = "/datas/${appUser}/run"
+folderBackup = "/datas/${appUser}/backups"
+folderMain = "/datas/${appUser}"
 buildScript = "mvn clean install -DskipTests=true"
 copyScript = "sudo cp target/${processName} ${folderDeploy}"
 permsScript = "sudo chown -R ${appUser}. ${folderDeploy}"
@@ -15,12 +15,7 @@ runScript = "sudo su ${appUser} -c 'cd ${folderDeploy}; java -jar ${processName}
 gitLink = "http://git.nnson128.tech/shoeshop/shoeshop.git"
 
 def getProcessId(processName){
-    def processId = sh(
-        returnStdout: true,
-        script: """pgrep -f ${processName} || true""",
-        label: "Get process Id"
-    ).trim()
-    return processId
+    def processId = sh(returnStdout:true, script: """pgrep -f ${processName}""", label: "Get process Id")
 }
 
 def startProcess(){
@@ -84,4 +79,3 @@ node(params.server){
         startProcess()
     }
 }
-```
