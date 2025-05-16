@@ -54,9 +54,9 @@ def upcodeProcess() {
 
 def backupProcess() {
     stage('backup') {
-        // shoe-ShoppingCart_03022024_1011.zip
+        // shoe-ShoppingCart_03022024_1011_<commit>.zip
         def timeStamp = new Date().format("ddMMyyyy_HHmm")
-        def zipFileName = "${appName}_${timeStamp}" + ".zip"
+        def zipFileName = "${appName}_${timeStamp}_${params.hash}" + ".zip"
         sh(script: """ sudo su ${appUser} -c "cd ${folderMain};zip -jr ${folderBackup}/${zipFileName} ${folderDeploy}"  """, label: "backup old version")
     }
 }

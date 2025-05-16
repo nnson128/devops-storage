@@ -33,3 +33,6 @@ if(action == "rollback"){
 }
 
 ```
+```
+./pipeline-rollback.md
+```
