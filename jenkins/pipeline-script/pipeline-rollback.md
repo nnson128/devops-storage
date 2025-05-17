@@ -1,3 +1,4 @@
+```
 appUser = "shoeshop"
 appName = "shoe-ShoppingCart"
 appVersion = "0.0.1-SNAPSHOT"
@@ -89,3 +90,4 @@ node(params.server) {
         startProcess()
     }
 }
+```
