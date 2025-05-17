@@ -1,4 +1,7 @@
 ```
+vi /lib/systemd/system/noteapp.service
+```
+```
 [Unit]
 Description=My spring boot application
 After=network.target
