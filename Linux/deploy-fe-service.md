@@ -21,7 +21,7 @@ Type=simple
 User=noteapp
 Restart=on-failure
 WorkingDirectory=/projects/noteapp
-ExecStart=npm run dev 
+ExecStart=/usr/bin/npm run dev 
 ```
 
 ```
