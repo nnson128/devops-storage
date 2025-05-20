@@ -2,6 +2,7 @@
 adduser devops
 su devops
 cd /home/devops
+usermod -aG root devops
 ```
 
 ```
