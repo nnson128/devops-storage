@@ -1,5 +1,6 @@
 1. config network
 ```
+    clone three server
 vi etc/hosts
     192.168.227.131 k8s-master-1
     192.168.227.132 k8s-master-2
