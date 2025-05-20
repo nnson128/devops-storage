@@ -1,6 +1,7 @@
 ```
-overlay
-br_netfilter
+adduser devops
+su devops
+cd /home/devops
 ```
 
 ```
@@ -31,4 +32,9 @@ echo "deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo apt update -y
 sudo apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
+```
+
+```
+overlay
+br_netfilter
 ```
