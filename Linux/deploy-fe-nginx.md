@@ -1,6 +1,7 @@
 Linux: 
 1. config
 ```
+- install nginx
 - chown -R note-fe. 
 - chmod -R 750 /projects/note-fe
 ```
@@ -10,7 +11,7 @@ Linux:
 - sử dụng user prj để triển khai 
 - build project
 ```
-3. run project <đảm bảo có mục build >
+3. run project <đảm bảo có mục build or dist>
 ```
 vi /etc/nginx/conf.d/note-fe.conf
 ```
@@ -29,5 +30,3 @@ usermod -aG note-fe www-data
 ```
 
 <!-- add user www-data to group note-fe -->
-
-
