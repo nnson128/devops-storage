@@ -1,10 +1,10 @@
 Linux: 
 1. config
 ```
-- install nginx
+    install nginx
 ```
 3. đảm bảo có mục build or dist
-```
+``` 
 vi /etc/nginx/sites-available/default
     port: 8999
 systemctl restart nginx
@@ -25,6 +25,3 @@ server {
 usermod -aG note-fe www-data
 nginx -s reload
 ```
-
-
-<!-- add user www-data to group note-fe -->
