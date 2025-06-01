@@ -10,7 +10,7 @@ Type=simple
 User=noteapp
 Restart=on-failure
 WorkingDirectory=/projects/noteapp
-ExecStart=/usr/bin/npm run dev 
+ExecStart=/usr/bin/npm run start --port=3000
 ```
 
 ```
