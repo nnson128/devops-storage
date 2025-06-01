@@ -14,9 +14,9 @@ Linux:
 3. run project <đảm bảo có mục build or dist>
 ```
 vi /etc/nginx/sites-available/default
-```
-```
+    port: 8999
 vi /etc/nginx/conf.d/note-fe.conf
+
 ```
 
 ```
@@ -30,13 +30,9 @@ server {
 
 ```
 usermod -aG note-fe www-data
-```
-
-```
-vi /etc/nginx/sites-available/default
-    port: 8999
 systemctl restart nginx
 nginx -s reload
 ```
+
 
 <!-- add user www-data to group note-fe -->
