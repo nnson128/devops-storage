@@ -15,6 +15,7 @@ Linux:
 ```
 vi /etc/nginx/sites-available/default
     port: 8999
+systemctl restart nginx
 vi /etc/nginx/conf.d/note-fe.conf
 
 ```
@@ -30,7 +31,6 @@ server {
 
 ```
 usermod -aG note-fe www-data
-systemctl restart nginx
 nginx -s reload
 ```
 
