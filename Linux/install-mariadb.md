@@ -1,5 +1,7 @@
 1. create db, username, passwd
 ```
+install mariadb 
+config bind address
 mysql -u root -p
 ```
 ```
