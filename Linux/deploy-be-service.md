@@ -1,15 +1,24 @@
 ```
-vi /lib/systemd/system/noteapp.service
+vi /lib/systemd/system/<shoeshop>.service
 ```
 ```
 [Unit]
-Description=My spring boot application
+Description=My Spring Boot Application
 After=network.target
 
 [Service]
 Type=simple
-User=note-be
+User=<shoeshop>
 Restart=on-failure
-WorkingDirectory=/projects/note-be
-ExecStart=/usr/bin/java -jar ./target/base-0.0.1-SNAPSHOT.jar
+RestartSec=10
+WorkingDirectory=/projects/<shoeshop>
+ExecStart=/usr/bin/java -jar /projects/<path>/target/<shoe-ShoppingCart>-0.0.1-SNAPSHOT.jar
+
+[Install]
+WantedBy=multi-user.target
+
+```
+```
+systemctl daemon-reload
+systemctl enable shoeshop
 ```

@@ -30,5 +30,8 @@ command:
         usermod -aG <group> <user>
         chown -R <user>:<group> dir
         chmod -R 750 dir
-        
+    processing:
+        ps -ef 
+        <!-- filter process -->
+        ps -ef | grep "[j]ava -jar"
 ```
