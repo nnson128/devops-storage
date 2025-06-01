@@ -1,17 +1,6 @@
-Linux: 
-1. config
+1. run project <đảm bảo có mục build >
 ```
-- chown -R note-fe. 
-- chmod -R 750 /projects/note-fe
-```
-
-2. build project
-```
-- sử dụng user prj để triển khai 
-- build project
-```
-3. run project <đảm bảo có mục build >
-```
+build project
 vi /lib/systemd/system/noteapp.service
 ```
 
