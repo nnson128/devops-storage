@@ -5,6 +5,8 @@ dev server:
     3gb memory
     1 processor
     shutdown and remove cd/dvd (auto detect)
+```
+```
 command: 
     tail -n 10 hello.txt (10 dong cuoi)
     tail -f hello.txt (log realtime)
@@ -29,4 +31,9 @@ command:
         chown -R <user>:<group> dir
         chmod -R 750 dir
         
+```
+
+```
+- Tool tương ứng + File config + Build And Run
+- Thư mục riêng + User riêng
 ```
