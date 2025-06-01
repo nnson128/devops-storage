@@ -13,6 +13,9 @@ Linux:
 ```
 3. run project <đảm bảo có mục build or dist>
 ```
+vi /etc/nginx/sites-available/default
+```
+```
 vi /etc/nginx/conf.d/note-fe.conf
 ```
 
