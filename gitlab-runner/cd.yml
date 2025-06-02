@@ -1,3 +1,16 @@
+```
+- mkdir /datas/shoeshop
+visudo
+root ALL=(ALL:ALL) ALL
+```
+
+```
+gitlab-runner ALL=(ALL) NOPASSWD: /bin/cp*
+gitlab-runner ALL=(ALL) NOPASSWD: /bin/chown*
+gitlab-runner ALL=(ALL) NOPASSWD: /bin/su shoeshop*
+gitlab-runner ALL=(ALL) NOPASSWD: /bin/kill -9*
+```
+```
 variables:
   PROJECT_NAME: shoe-ShoppingCart
   PROJECT_VERSION: 0.0.1-SNAPSHOT
@@ -53,3 +66,4 @@ showlog:
   only:
     - tags
   when: manual
+```
