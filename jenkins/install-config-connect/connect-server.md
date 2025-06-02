@@ -27,12 +27,6 @@ connected
 - manage jenkins > system > kéo xuống: Gitlab
     + connection name: gitlab server
     + credentials: 
-        - token: 
-            gitlab server(user jenkins role admin)
-            profile -> access token
-                token name: token for jenkins server connection 
-                scopes: api
-                create personal access token
         - ID = desc: jenkins-gitlab-user
 success
 ```
