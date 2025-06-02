@@ -4,17 +4,19 @@
     - develop
     - feature/frontend/login
     - feature/backend/login
-    - staging
+    - staging (from developer)
 ```
 ```
 2. protected branches
-    - default branch -> develop
-    - main: maintainer - no one
-    - develop: maintainer - maintainer
-        + devops: commit config(database): modify connection
-    - staging: maintainer - maintainer
-    - push commit to main 
-        + cannot push commit to main
+    default branch -> develop
+    - protected
+        main: maintainer - no one
+        staging: maintainer - maintainer
+        develop: maintainer - maintainer
+            + devops: commit config(database): modify connection
+        test commit
+            + push commit to main 
+            + cannot push commit to main
 ```
 ```
 
@@ -24,5 +26,5 @@
     - assign: leader 
     - reviewer: leader
     - close "Delete source branch when merge request is accepted"
-    ``` create merge request
+    create merge request
 ```
