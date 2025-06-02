@@ -10,9 +10,6 @@ user vi /etc/passwd
 ```
 - access git.nnson128.tech
 - settings -> CI/CD -> runner
-```
-- lab server:
-``` 
 gitlab-runner register
     + cop url && token
     + desc = tag: lab server
@@ -25,9 +22,7 @@ ps -ef | grep gitlab-runner
 
 3. config gitlab runner on gitlab server: cấu hình con runner chạy khi nào
 ``` 
-- 
 - settings -> CI/CD -> runner
-- understabd option of ci/cd on gitlab server
 - edit lab-server
     - close "Lock to current projects"
 - save
