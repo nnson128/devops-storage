@@ -39,18 +39,19 @@ deploy:
   variables:
     GIT_STRATEGY: none
   script:
-    - sudo cp ./target/$PROJECT_NAME-$PROJECT_VERSION.jar $PROJECT_PATH/
-    - sudo chown -R $PROJECT_USER:$PROJECT_USER $PROJECT_PATH
-    - sudo su $PROJECT_USER -c "
-        PID=\$(ps -ef | grep '$PROJECT_NAME-$PROJECT_VERSION.jar' | grep -v grep | awk '{print \$2}');
-        if [ -n \"\$PID\" ]; then
-            echo \"Stopping existing process with PID \$PID\";
-            kill \$PID;
-            sleep 2;
-            [ -n \"\$(ps -p \$PID -o pid=)\" ] && kill -9 \$PID;
-        fi;
-        cd $PROJECT_PATH;
-    - nohup java -jar $PROJECT_NAME-$PROJECT_VERSION.jar > $LOG_FILE 2>&1 &
+    sudo cp ./target/$PROJECT_NAME-$PROJECT_VERSION.jar $PROJECT_PATH/
+    sudo chown -R $PROJECT_USER:$PROJECT_USER $PROJECT_PATH
+    sudo su $PROJECT_USER -c "
+      PID=\$(ps -ef | grep '$PROJECT_NAME-$PROJECT_VERSION.jar' | grep -v grep | awk '{print \$2}');
+      if [ -n \"\$PID\" ]; then
+        echo \"Stopping existing process with PID \$PID\";
+        kill \$PID;
+        sleep 2;
+        [ -n \"\$(ps -p \$PID -o pid=)\" ] && kill -9 \$PID;
+      fi;
+      echo \"Starting new process...\";
+      cd $PROJECT_PATH;
+      nohup java -jar $PROJECT_NAME-$PROJECT_VERSION.jar > $LOG_FILE 2>&1 &
   tags:
     - lab-server
   only:
