@@ -52,10 +52,10 @@ success
 4. config webhook
 ```
 4. webhook (gitlab server)
+- admin > settings > network > outbound requests
+    + allow request to the local network from webhooks and services
+    + allow request to the local network from system hooks
 repo: settings > webhooks
-    - admin > settings > network > outbound requests
-        + allow request to the local network from webhooks and services
-        + allow request to the local network from system hooks
     - URL: http://<user_admin_jenkins>:<token_user_jenkins>@<jenkins_server>:<port>/project/<name_job>
     - URL: http://nnson128:115479389b6e8c4178889d6d9b31bd7742@jenkins.nnson128.tech:80/project/Action_in_lab/shoeshop
         +: token_user_jenkins
