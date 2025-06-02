@@ -1,6 +1,7 @@
 1. requirement
 ```
-- Tool tương ứng + File config + Build And Run
+- FILE CONFIG. import .env.production or .env.development
+- Tool tương ứng + Build And Run
 - Thư mục riêng + User riêng
 ```
 
