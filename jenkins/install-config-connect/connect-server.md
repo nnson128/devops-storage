@@ -4,7 +4,7 @@ jenkins server
     bản chất jenkins là ra lệnh cho các deploying server triển khai các dự án 
 ```
 
-1. connect jenkins server - deploying server: setup jenkins agent: node
+1. connect to jenkins server 
 ```
 Phương pháp: 
     + ssh
@@ -14,12 +14,11 @@ require:
 deploying server
     mkdir /var/lib/jenkins
     adduser jenkins
+manage jenkins > security > TCP port
 new node 
-    Remote root directory: none. 
-        Chỉ cần chỉ định workdir bước chạy java -jar là được
+    Chỉ cần chỉ định workdir bước chạy java -jar là được
 cd && su jenkins /var/lib/jenkins
-run command: <ignore websocket> + workdir /var/lib/jenkinss
-    - user được node xác định là user run command java -jar
+    run command
 connected
 ```
 2. kết nối jenkins server đến gitlab
