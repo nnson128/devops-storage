@@ -1,3 +1,4 @@
+```
 # ```
 # mkdir /datas/shoeshop
 # visudo
@@ -10,6 +11,7 @@
 # gitlab-runner ALL=(ALL) NOPASSWD: /bin/su shoeshop*
 # gitlab-runner ALL=(ALL) NOPASSWD: /bin/kill -9*
 # ```
+```
 ```
 variables:
   PROJECT_NAME: shoe-ShoppingCart
