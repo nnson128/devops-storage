@@ -130,6 +130,7 @@ Command app - K9S
 Desktop app - Lens
 Website app - Rancher
 ```
+```
 ERROR PENDING
 ``` 
 kubectl -n kube-system edit configmap coredns
