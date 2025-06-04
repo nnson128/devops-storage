@@ -131,14 +131,9 @@ services:
 
 ```
 
-```
 SỬ DỤNG CÔNG CỤ GIAO DIỆN ĐỂ TRÍCH XUẤT FILE YAML
 ```
 Command app - K9S
 Desktop app - Lens
 Website app - Rancher
-```
-```
-
-
 ```
