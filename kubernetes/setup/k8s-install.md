@@ -72,8 +72,7 @@ kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/
 WAITING FOR 5 MINUTES
 
 
-
-## 3 MASTER - 3 WORKER
+------------------------------3 MASTER - 3 WORKER------------------------------
 # k8s-master-1
 sudo kubeadm init --control-plane-endpoint "192.168.1.111:6443" --upload-certs 
 
