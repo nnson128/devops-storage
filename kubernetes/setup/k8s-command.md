@@ -22,3 +22,12 @@ kubectl get pods -n kube-system
 # Kiểm tra các pod Calico (CNI)
 kubectl get pods -n calico-system
 ```
+
+```
+trinh duyet web: rancher.nnson128.vn
+        |
+        |- ssl cert
+        |
+server: docker
+
+```
