@@ -75,7 +75,6 @@ WAITING FOR 5 MINUTES
 ------------------------------3 MASTER - 3 WORKER------------------------------------------------------------------------------------------------------------------------------------------------------
 # k8s-master-1
 sudo kubeadm init --control-plane-endpoint "192.168.1.111:6443" --upload-certs 
-
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
@@ -90,7 +89,6 @@ kubectl taint nodes k8s-master-1 node-role.kubernetes.io/control-plane:NoSchedul
 kubectl taint nodes k8s-master-2 node-role.kubernetes.io/control-plane:NoSchedule- 
 kubectl taint nodes k8s-master-3 node-role.kubernetes.io/control-plane:NoSchedule- 
 
-```
 ```
 INSTALL RANCHER SERVER
 ```
