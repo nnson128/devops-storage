@@ -48,7 +48,8 @@ curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.30/deb/Release.key | sudo gpg --
 sudo apt update -y
 sudo apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
-
+```
+```
 ### TRIEN KHAI CLUSTER K8S
 ## 1 CONTROLER PLANE (ĐIỀU HÀNH ) - 2 WORKER (SERVER TRIỂN KHAI DỰ ÁN)
 - k8s-master-1:
