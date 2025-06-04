@@ -48,6 +48,12 @@ sudo apt update -y
 sudo apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
+RESET K8S - RUN ON 3 SERVERS
+```
+sudo kubeadm reset -f
+sudo rm -rf /var/lib/etcd
+sudo rm -rf /etc/kubernetes/manifests/*
+```
 TRIEN KHAI CLUSTER K8S
 ```
 ### 
@@ -66,10 +72,7 @@ Run command
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
 WAITING FOR 5 MINUTES
 
-            ## RESET: (RUN ON 3 SERVERS)
-            sudo kubeadm reset -f
-            sudo rm -rf /var/lib/etcd
-            sudo rm -rf /etc/kubernetes/manifests/*
+
 
 ## 3 MASTER - 3 WORKER
 # k8s-master-1
