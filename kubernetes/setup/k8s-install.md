@@ -56,8 +56,7 @@ sudo rm -rf /etc/kubernetes/manifests/*
 ```
 TRIEN KHAI CLUSTER K8S
 ```
-### 
-## 1 CONTROLER PLANE (ĐIỀU HÀNH ) - 2 WORKER (SERVER TRIỂN KHAI DỰ ÁN)
+------------------------------1 CONTROLER PLANE (ĐIỀU HÀNH ) - 2 WORKER (SERVER TRIỂN KHAI DỰ ÁN)------------------------------
 - k8s-master-1:
 sudo kubeadm init
 mkdir -p $HOME/.kube
