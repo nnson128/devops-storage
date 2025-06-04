@@ -1,6 +1,5 @@
 K8S INSTALLATION
 ```
-vpn
 every server: netplan - addhost - hostname
 192.168.1.111 k8s-master-1
 192.168.1.112 k8s-master-2
@@ -49,8 +48,9 @@ sudo apt update -y
 sudo apt install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
+TRIEN KHAI CLUSTER K8S
 ```
-### TRIEN KHAI CLUSTER K8S
+### 
 ## 1 CONTROLER PLANE (ĐIỀU HÀNH ) - 2 WORKER (SERVER TRIỂN KHAI DỰ ÁN)
 - k8s-master-1:
 sudo kubeadm init
