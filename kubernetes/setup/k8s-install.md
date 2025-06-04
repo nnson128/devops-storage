@@ -54,6 +54,14 @@ sudo kubeadm reset -f
 sudo rm -rf /var/lib/etcd
 sudo rm -rf /etc/kubernetes/manifests/*
 ```
+ERROR PENDING
+``` 
+kubectl -n kube-system edit configmap coredns
+hosts {
+  192.168.1.114 rancher.nnson128.vn
+  fallthrough
+}
+```
 TRIEN KHAI CLUSTER K8S
 ```
 ------------------------------1 CONTROLER PLANE (ĐIỀU HÀNH ) - 2 WORKER (SERVER TRIỂN KHAI DỰ ÁN)------------------------------
@@ -131,13 +139,6 @@ Desktop app - Lens
 Website app - Rancher
 ```
 ```
-ERROR PENDING
-``` 
-kubectl -n kube-system edit configmap coredns
-hosts {
-  192.168.1.114 rancher.nnson128.vn
-  fallthrough
-}
-```
+
 
 ```
