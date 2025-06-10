@@ -38,10 +38,24 @@ spec:
 
 ```
 ```
-kubectl get pod -n 
+### namespace:
+kubectl get ns 
+
+### pod:
+kubectl get pod -n
+
+### apply delete
 kubectl apply -f ns.yaml
 kubectl delete -f pod.yaml
 
-recommend: 1 pod 1 project
+recommend: 1 pod - 1 project
 
+
+### 
+kubectl get deployments -n car-serv
+
+```
+PODS
+```
+don't create a server - tcp - port expose - save
 ```
